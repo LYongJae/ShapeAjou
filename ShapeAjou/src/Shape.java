@@ -2,6 +2,7 @@
 abstract public class Shape {
 	
 	private int id;
+	private int temporary;
 	
 	public abstract double calculateArea();
 	
