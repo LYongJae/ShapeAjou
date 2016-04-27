@@ -1,17 +1,13 @@
 
-public class Shape {
+abstract public class Shape {
 	
 	private int id;
 	
-	public double calculateArea() {
-		
-	}
+	public abstract double calculateArea();
 	
+	public abstract double calculatePerimeter();
 	
-	
-	public void printInfo() {
-		
-	}
+	public abstract void printInfo();
 
 	public int getId() {
 		return id;
