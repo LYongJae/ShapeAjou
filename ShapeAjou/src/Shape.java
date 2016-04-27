@@ -4,6 +4,10 @@ abstract public class Shape {
 	private int id;
 	private int temporary;
 	
+	public Shape() {
+		
+	}
+	
 	public abstract double calculateArea();
 	
 	public abstract double calculatePerimeter();
