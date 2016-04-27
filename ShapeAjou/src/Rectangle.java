@@ -3,9 +3,9 @@ public class Rectangle extends Shape{
 	private double width;
 	private double height;
 	
-	Rectangle(double w, double h){
-		width = w;
-		height = h;
+	public Rectangle(double w, double h){
+		this.width = w;
+		this.height = h;
 	}
 	
 	public double calculateArea(){
@@ -35,6 +35,9 @@ public class Rectangle extends Shape{
 	}
 	
 	public void printInfo(){
-		//Leader
+		System.out.format("Rectangle with an id of " + );
+        System.out.format("width of %f, height of %f, ", width, height);
+        System.out.format("area of %f, and ", calculateArea());
+        System.out.format("perimeter of %f", calculatePerimeter());
 	}
 }
