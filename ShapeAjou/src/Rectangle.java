@@ -35,7 +35,7 @@ public class Rectangle extends Shape{
 	}
 	
 	public void printInfo(){
-		System.out.format("Rectangle with an id of " + );
+		System.out.format("Rectangle with an id of " + Rectangle.this.getId());
         System.out.format("width of %f, height of %f, ", width, height);
         System.out.format("area of %f, and ", calculateArea());
         System.out.format("perimeter of %f", calculatePerimeter());

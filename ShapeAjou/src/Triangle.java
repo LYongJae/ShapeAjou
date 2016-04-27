@@ -44,7 +44,7 @@ public class Triangle extends Shape {
 	}
 
 	public void printInfo() {
-        System.out.format("Triangle with an id of ");
+        System.out.format("Triangle with an id of " + Triangle.this.getId());
         System.out.format("sides of %f, %f and %f, ", side1, side2, side3);
         System.out.format("area of %f, and ", calculateArea());
         System.out.format("perimeter of %f", calculatePerimeter());
