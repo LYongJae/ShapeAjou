@@ -7,9 +7,7 @@ public class Shape {
 		
 	}
 	
-	public double calculatePerimeter() {
-		
-	}
+	
 	
 	public void printInfo() {
 		
