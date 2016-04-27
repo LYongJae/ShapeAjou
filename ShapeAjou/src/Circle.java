@@ -1,32 +1,26 @@
-public class   Circle  extends Shape{
+public class Circle extends Shape {
 
-private double radius;
-
-
+	private double radius;
 
 	public double getRadius() {
-	return radius;
-}
+		return radius;
+	}
 
+	public void setRadius(double radius) {
+		this.radius = radius;
+	}
 
+	public double calculateArea() {
+		return radius * radius;
+	}
 
-public void setRadius(double radius) {
-	this.radius = radius;
-}
+	public double calculatePerimeter() {
+		return 2;
+	}
 
-public double calculateArea()
-{ 
-	return radius*radius;
-}
-public double calculatePerimeter()
-{
-	return;
-}
-public void printinfo()
-{
-	
-}
+	public void printinfo() {
 
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
