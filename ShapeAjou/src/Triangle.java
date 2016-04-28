@@ -35,8 +35,9 @@ public class Triangle extends Shape {
 
 	public double calculateArea() {
 		double s = ((side1 + side2 + side3) / 2);
-
-		return Math.sqrt((s - side1) * (s - side2) * (s - side3));
+		double result = Math.sqrt(s*(s - side1) * (s - side2) * (s - side3));
+		
+		return result;
 	}
 
 	public double calculatePerimeter() {
@@ -44,10 +45,10 @@ public class Triangle extends Shape {
 	}
 
 	public void printInfo() {
-        System.out.format("Triangle with an id of " + Triangle.this.getId());
+        System.out.format("Triangle with an id of " + Triangle.this.getId()+", ");
         System.out.format("sides of %f, %f and %f, ", side1, side2, side3);
         System.out.format("area of %f, and ", calculateArea());
-        System.out.format("perimeter of %f", calculatePerimeter());
+        System.out.format("perimeter of %f\n", calculatePerimeter());
 	}
 
 

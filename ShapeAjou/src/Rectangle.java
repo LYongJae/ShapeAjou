@@ -23,9 +23,9 @@ public class Rectangle extends Shape{
 		{
 			for(int j=0; j<width; j++)
 			{
-				if(i == 0 || j == 0 || j == width - 1)
+				if((i == 0 || i == height-1 )&&(j==0 || j == width - 1))
 					System.out.print("+");
-				else if(i > 0 && j == 0 || j == width - 1)
+				else if(i > 0 && (j == 0 || j == width - 1))
 					System.out.print("|");
 				else
 					System.out.print("-");
@@ -35,9 +35,9 @@ public class Rectangle extends Shape{
 	}
 	
 	public void printInfo(){
-		System.out.format("Rectangle with an id of " + Rectangle.this.getId());
+		System.out.format("Rectangle with an id of " + Rectangle.this.getId()+", ");
         System.out.format("width of %f, height of %f, ", width, height);
         System.out.format("area of %f, and ", calculateArea());
-        System.out.format("perimeter of %f", calculatePerimeter());
+        System.out.format("perimeter of %f\n", calculatePerimeter());
 	}
 }

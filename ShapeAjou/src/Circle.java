@@ -23,10 +23,10 @@ public class Circle extends Shape {
 	}
 
 	public void printInfo() {
-		System.out.format("Circle with an id of " + Circle.this.getId());
+		System.out.format("Circle with an id of " + Circle.this.getId()+", ");
 		System.out.format("radius of %f, ", radius);
 		System.out.format("area of %f, and ", calculateArea());
-		System.out.format("perimeter of %f", calculatePerimeter());
+		System.out.format("perimeter of %f\n", calculatePerimeter());
 	}
 
 }
